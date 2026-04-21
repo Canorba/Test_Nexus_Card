@@ -26,5 +26,4 @@ public class TransactionServiceImpl implements TransactionService {
 		// TODO Auto-generated method stub
 		return transactionRepository.getById(idTransaction);
 	}
-
 }
