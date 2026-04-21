@@ -90,6 +90,13 @@ No permite compra con tarjeta vencida
 Anulación solo en 24 horas
 Reintegro automático del saldo
 ---
+Pruebas
+```bash
+mvn test
+```
+Cobertura mínima: 80%
+---
+
 Postman
 Importar colección incluida en:
 ```
