@@ -2,6 +2,8 @@ package com.bankinc.card_system.dto.request;
 
 import java.math.BigDecimal;
 
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Positive;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.NoArgsConstructor;
@@ -11,8 +13,10 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class PurchaseRequestDTO {
 
+	@NotNull
 	private String cardId;
-
+	@NotNull
+	@Positive
 	private BigDecimal price;
 
 	public String getCardId() {

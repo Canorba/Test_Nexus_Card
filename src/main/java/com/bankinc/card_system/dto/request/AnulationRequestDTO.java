@@ -1,5 +1,6 @@
 package com.bankinc.card_system.dto.request;
 
+import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.NoArgsConstructor;
@@ -9,8 +10,10 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class AnulationRequestDTO {
 
+	@NotNull
 	private String cardId;
 
+	@NotNull
     private String transactionId;
 
 	public String getCardId() {

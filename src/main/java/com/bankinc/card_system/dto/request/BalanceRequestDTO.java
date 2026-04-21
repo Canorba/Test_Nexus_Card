@@ -2,10 +2,16 @@ package com.bankinc.card_system.dto.request;
 
 import java.math.BigDecimal;
 
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Positive;
+
 public class BalanceRequestDTO {
 
+	@NotNull
 	private String cardId;
 
+	@NotNull
+	@Positive
     private BigDecimal balance;
 
 	public String getCardId() {

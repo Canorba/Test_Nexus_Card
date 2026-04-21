@@ -1,7 +1,10 @@
 package com.bankinc.card_system.dto.request;
 
+import jakarta.validation.constraints.NotNull;
+
 public class CardEnrollRequestDTO {
 
+	@NotNull
 	private String cardId;
 
 	public String getCardId() {
