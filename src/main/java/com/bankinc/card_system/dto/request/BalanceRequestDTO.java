@@ -2,12 +2,14 @@ package com.bankinc.card_system.dto.request;
 
 import java.math.BigDecimal;
 
+import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
 
 public class BalanceRequestDTO {
 
 	@NotNull
+	@NotBlank
 	private String cardId;
 
 	@NotNull
