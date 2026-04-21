@@ -1,0 +1,33 @@
+package com.bankinc.card_system.dto.request;
+
+import java.math.BigDecimal;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.NoArgsConstructor;
+
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class PurchaseRequestDTO {
+
+	private String cardId;
+
+	private BigDecimal price;
+
+	public String getCardId() {
+		return cardId;
+	}
+
+	public void setCardId(String cardId) {
+		this.cardId = cardId;
+	}
+
+	public BigDecimal getPrice() {
+		return price;
+	}
+
+	public void setPrice(BigDecimal price) {
+		this.price = price;
+	}
+}
